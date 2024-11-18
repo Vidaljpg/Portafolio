@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sebastian Vidal - Portafolio Personal</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom right, #f0f0f0, #e0e0e0);
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 0 20px;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #0077be 3px solid;
+        }
+        header h1 {
+            margin: 0;
+            text-align: center;
+            font-size: 2.5em;
+        }
+        header p {
+            margin: 0;
+            text-align: center;
+            padding-bottom: 10px;
+        }
+     
+        nav {
+            background: #444;
+            color: #fff;
+            padding: 10px 0;
+        }
+        nav ul {
+            padding: 0;
+            list-style: none;
+            text-align: center;
+        }
+        nav li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav a:hover {
+            color: #0077be;
+        }
+   
+        section {
+            padding: 20px 0;
+        }
+        h2 {
+            color: #333;
+            text-align: center;
+        }
+  
+        .hobbies {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .hobby-card {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 10px;
+            padding: 20px;
+            width: calc(33.333% - 20px);
+            min-width: 250px;
+        }
+        .hobby-card h3 {
+            margin-top: 0;
+            color: #0077be;
+        }
+        .hobby-card p {
+            margin-bottom: 10px;
+        }
+        .hobby-card .icon {
+            font-size: 24px;
+            margin-right: 10px;
+        }
+       
+        .btn {
+            display: inline-block;
+            background: #0077be;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+        .btn:hover {
+            background: #005f9e;
+        }
+
+        .about {
+            background: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .contact {
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            font-size: 24px;
+            color: #333;
+            transition: color 0.3s ease;
+        }
+        .social-links a:hover {
+            color: #0077be;
+        }
+ 
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+  
+        @media(max-width: 768px) {
+            .hobby-card {
+                width: calc(50% - 20px);
+            }
+        }
+        @media(max-width: 500px) {
+            .hobby-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Sebastian<h1>
+            <p>Vidal Orozco</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#ACERCA">Sobre mí</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="hobbies">
+        <div class="container">
+            <h2>Mis Hobbies</h2>
+            <div class="hobbies">
+                <div class="hobby-card">
+                    <h3><span class="icon">🎵</span>Escuchar música</h3>
+                   
+                </div>
+                <div class="hobby-card">
+                    <h3><span class="icon">✈️</span>Viajar</h3>
+                    
+                </div>
+                <div class="hobby-card">
+                    <h3><span class="icon">📷</span>Fotografía</h3>
+                   
+                </div>
+                <div class="hobby-card">
+                    <h3><span class="icon">💻</span>Programar</h3>
+                   
+                </div>
+                <div class="hobby-card">
+                    <h3><span class="icon">🚶</span>Caminar</h3>
+                  
+                </div>
+                <div class="hobby-card">
+                    <h3><span class="icon">🐱</span>Mi gata</h3>
+                    <p>La kira</p>
+                    <a href="kira.html" class="btn">Ver fotos de mi gata</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ACERCA">
+        <div class="container">
+            <h2>Sobre mí</h2>
+            <div class="about">
+                <p>Me llamo sebastian vidal y vivo en valledupar</p>
+               
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <h2>Contacto</h2>
+            <div class="contact">
+                <p>Contatame por:</p>
+                <div class="social-links">
+                    <a href="https://th.bing.com/th/id/OIP.qf1GyDoJr2eSfR57ZxIoagHaEK?rs=1&pid=ImgDetMain" title="MATRIX"><span class="icon">📂</span></a>
+                    <a href="https://www.webtekno.com/images/editor/default/0003/14/17eeb1f95cbe49ddd0bfe08ac24e0aa0441f5f56.jpeg" title="LinkedIn"><span class="icon">💼</span></a>
+                    <a href="https://www.webtekno.com/images/editor/default/0003/14/17eeb1f95cbe49ddd0bfe08ac24e0aa0441f5f56.jpeg" title="Email"><span class="icon">✉️</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Sebastian. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
